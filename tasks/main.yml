@@ -1,7 +1,6 @@
 ## argocd role
 
-# From repository
-- name: "{{ argocd.helm.name | upper }}" | Adding Helm Repo "{{ argocd.helm.repository_url }}"
+- name: "{{ argocd.helm.name | upper }}| Adding Helm Repo {{ argocd.helm.repository_url }}"
   helm_repository:
     name: "{{ argocd.helm.name }}"
     repo_url: "{{ argocd.helm.repository_url }}"
