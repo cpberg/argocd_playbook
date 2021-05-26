@@ -5,7 +5,7 @@
     name: "{{ argocd.helm.name }}"
     repo_url: "{{ argocd.helm.repository_url }}"
 
-- name: "{{ argocd.helm.name | upper }}" | Deploy latest version of "{{argocd.helm.chart_ref }}" chart inside "{{argocd.helm.namespace }}" namespace
+- name: "{{ argocd.helm.name | upper }} | Deploy latest version of {{argocd.helm.chart_ref }} chart inside {{argocd.helm.namespace }} namespace"
   helm:
     name: "{{ argocd.helm.name }}"
     chart_ref: "{{ argocd.helm.chart_ref }}"
