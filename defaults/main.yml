@@ -3,9 +3,9 @@
 
 argocd:
   helm:
-    name: argocd
+    name: argo
     repository_url: https://argoproj.github.io/argo-helm
-    chart_ref: argocd/argo-cd
+    chart_ref: argo/argo-cd
     namespace: argocd
 
 
