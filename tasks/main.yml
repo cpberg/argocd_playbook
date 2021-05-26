@@ -11,3 +11,4 @@
     chart_ref: "{{ argocd.helm.chart_ref }}"
     release_namespace: "{{ argocd.helm.namespace }}"
     create_namespace: 'yes'
+    update_repo_cache: 'yes'
