@@ -1,0 +1,11 @@
+## argocd role default variables
+---
+
+argocd:
+  helm:
+    name: argocd
+    repository_url: https://argoproj.github.io/argo-helm
+    chart_ref: argo-cd
+    namespace: argocd
+
+
