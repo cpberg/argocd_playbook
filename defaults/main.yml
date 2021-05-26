@@ -5,7 +5,7 @@ argocd:
   helm:
     name: argocd
     repository_url: https://argoproj.github.io/argo-helm
-    chart_ref: argo-cd
+    chart_ref: argo/argo-cd
     namespace: argocd
 
 
